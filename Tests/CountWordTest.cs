@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Xunit;
 using WordCounter.Objects;
 
-namespace CountWordTest
+namespace WordCounterTest
 {
   public class RepeatCounterTest
   {
