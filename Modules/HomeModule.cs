@@ -11,7 +11,7 @@ namespace WordCounter
         return View["index.cshtml"];
       };
       Post["/score"] = _ => {
-        int Count = RepeatCounter.CountRepeats(Request.Form["sentence"], Request.Form["word"]);
+        int Count = RepeatCounter.CountRepeats(Request.Form["word"], Request.Form["sentence"]);
         return View["results.cshtml", Count];
       };
     }
