@@ -35,5 +35,12 @@ namespace WordCounterTest
       int result = RepeatCounter.CountRepeats("dog", "dog!");
       Assert.Equal(count, result);
     }
+    [Fact]
+    public void CountWord_CountReturnsZero_True()
+    {
+      int count = 0;
+      int result = RepeatCounter.CountRepeats("dog", "cat");
+      Assert.Equal(count, result);
+    }
   }
 }
