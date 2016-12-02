@@ -28,5 +28,12 @@ namespace WordCounterTest
       int result = RepeatCounter.CountRepeats("dog", "dOg");
       Assert.Equal(count, result);
     }
+    [Fact]
+    public void CountWord_CountsWordsWithDelimiters_True()
+    {
+      int count = 1;
+      int result = RepeatCounter.CountRepeats("dog", "dog!");
+      Assert.Equal(count, result);
+    }
   }
 }
