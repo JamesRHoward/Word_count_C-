@@ -21,5 +21,12 @@ namespace WordCounterTest
       int result = RepeatCounter.CountRepeats("dog", "My dog loves to play with my friend's dogdog dog");
       Assert.Equal(count, result);
     }
+    [Fact]
+    public void CountWord_CountsWordsWithCaseInsensitivity_True()
+    {
+      int count = 1;
+      int result = RepeatCounter.CountRepeats("dog", "dOg");
+      Assert.Equal(count, result);
+    }
   }
 }
