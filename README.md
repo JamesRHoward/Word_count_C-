@@ -11,20 +11,13 @@ _This application has two input fields, One asks for user to input a word to che
 ## Specs
 
 
-| Behavior - Plain English                                        | Input                                    | Output                                   |
-|-----------------------------------------------------------------|------------------------------------------|------------------------------------------|
-| User inputs sentence "I like my dog"                            | I like my dog                            | I like my dog                            |
-| User inputs word to check on sentence                           | dog                                      | 1                                        |
-| User inputs sentence "I like my dog"                            | Iike my dog                              | I like my dog                            |
-| User inputs word to check on sentence                           | cat                                      | 0                                        |
-| User inputs sentence "I like my dOg"                            | I like my dOg                            | I like my dOg                            |
-| User inputs word to check on sentence                           | dog                                      | 1                                        |
-| User inputs sentence "My dog loves to play with my friends dog" | My dog loves to play with my friends dog | My dog loves to play with my friends dog |
-| User inputs word to check on sentence                           | dog                                      | 2                                        |
-| User inputs sentence "I love my Dog!"                           | I love my Dog                            | I love my dog                            |
-| User inputs Word to check in sentence                           | Dog!                                     | 1                                        |
-| User inputs sentence "I love my Dog"                            | User inputs sentence "I love my Dog"     | User inputs sentence "I love my Dog"     |
-| User inputs word to check in sentence                           | cat                                      | cat                                      |
+| Behavior - Plain English                                                                      | Input                                                                                | Output                |
+|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-----------------------|
+| User input sentence: "I like my dog", User Inputs word to check count: "dog"                  | input sentence: "I like my dog",  input word to check count: "dog"                   | input word shows up 1 |
+| User input sentence: "I like my dog", User Inputs word to check count: "cat"                  | input sentence: "I like my dog",  inputs word to check count: "cat"                  | input word shows up 0 |
+| User input sentence: "I like my dog, my dog is nice.", User Inputs word to check count: "dog" | input sentence: "I like my dog, my dog is nice.",  inputs word to check count: "dog" | input word shows up 2 |
+| User input sentence: "I like my dOg", User Inputs word to check count: "dog"                  |  input sentence: "I like my dOg",  inputs word to check count: "dog"                 | input word shows up 1 |
+| User input sentence: "I like my dog!", User Inputs word to check count: "dog"                 | input sentence: "I like my dog!" inputs word to check count: "dog"                   | input word shows up 1 |                          | cat                                      | cat                                      |
 
 ## Setup/Installation Requirements
 
